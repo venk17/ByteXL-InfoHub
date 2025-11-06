@@ -12,7 +12,7 @@ function WeatherModule() {
     setError('');
     
     try {
-      const response = await axios.get('/api/weather');
+      const response = await axios.get('https://bytexl-infohub-sqg1.onrender.com/api/weather');
       setWeatherData(response.data);
     } catch (error) {
       console.error('Weather fetch error:', error);

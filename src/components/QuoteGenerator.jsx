@@ -14,7 +14,7 @@ function QuoteGenerator() {
     setLiked(false);
     
     try {
-      const response = await axios.get('/api/quote');
+      const response = await axios.get('https://bytexl-infohub-sqg1.onrender.com/api/quote');
       setQuote(response.data);
     } catch (error) {
       console.error('Quote fetch error:', error);

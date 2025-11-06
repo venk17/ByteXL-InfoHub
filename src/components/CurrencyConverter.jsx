@@ -18,7 +18,7 @@ function CurrencyConverter() {
     setError('');
     
     try {
-      const response = await axios.get(`/api/currency?amount=${amountToConvert}`);
+      const response = await axios.get(`https://bytexl-infohub-sqg1.onrender.com/api/currency?amount=${amountToConvert}`);
       setConversionData(response.data);
     } catch (error) {
       console.error('Currency conversion error:', error);
